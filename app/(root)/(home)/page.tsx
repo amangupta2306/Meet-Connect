@@ -10,9 +10,9 @@ const HomePage = () => {
     now
   );
   return (
-    <div className="h-screen p-10 rounded-md pt-28">
-      <div className="text-white bg-slate-800 p-8 rounded-lg flex flex-col justify-between gap-5 h-60">
-        <p className="p-3 bg-slate-600 w-fit rounded-lg font-semibold text-lg">
+    <div className="px-12 lg:p-10 lg:px-16 rounded-md">
+      <div className="text-white bg-slate-800 p-7 lg:p-8 rounded-lg flex flex-col justify-between gap-5 h-60">
+        <p className="p-3 bg-slate-600 w-fit rounded-lg font-semibold lg:text-lg">
           Upcoming Meeting at: 12:30 PM
         </p>
         <div className="">

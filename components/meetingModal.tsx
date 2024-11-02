@@ -27,7 +27,7 @@ export const MeetingModal = ({
 }: MeetingModalProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="flex items-center w-full justify-center bg-slate-700 border-none text-white">
+      <DialogContent className="flex items-center w-80 md:w-full justify-center rounded-lg bg-slate-700 border-none text-white">
         <div className="w-full space-y-3">
           <h1 className="text-2xl font-semibold text-center">{title}
 

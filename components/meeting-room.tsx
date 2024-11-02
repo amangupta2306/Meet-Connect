@@ -37,13 +37,13 @@ export const MeetingRoom = () => {
   };
 
   return (
-    <section className="relative h-screen w-full bg-slate-900 text-white flex items-center justify-center">
-      <div className="relative p-10">
+    <section className="relative h-screen w-full bg-slate-900 text-white flex items-center justify-center px-3">
+      <div className=" p-10 w-full">
       <CallLayout />
       </div>
       <div
         className={cn(
-          "h-[calc(100vh-86px)]  bg-slate-950 w-80 p-5 rounded-md" ,
+          "h-[calc(100vh-86px)] bg-slate-950 w-[400px] p-5 rounded-xl" ,
           showParticipants ? "block" : "hidden"
         )}
       >

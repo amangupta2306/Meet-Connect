@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 export const Sidebar = () => {
   const pathame = usePathname();
   return (
-    <section className="bg-slate-900 h-screen sticky left-0 top-0 pt-28 w-fit p-6">
+    <section className="bg-slate-900 h-screen sticky left-0 top-0 pt-28 w-fit p-6 hidden lg:block">
       {SidebarLinks.map((link) => {
         const isActive = pathame === link.route;
         return (

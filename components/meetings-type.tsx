@@ -77,12 +77,6 @@ export const MeetingType = () => {
 
   const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${callDetails?.id}`;
 
-  {
-    console.log(callDetails, "aman");
-  }
-  {
-    console.log(values, "alok");
-  }
   return (
     <section className="grid md:grid-cols-4 gap-4">
       <MeetingItemList

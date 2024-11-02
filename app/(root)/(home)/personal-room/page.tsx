@@ -15,9 +15,9 @@ const Table = ({
   description: string;
 }) => {
   return (
-    <div className="flex items-start gap-5 py-4">
-      <h1 className="text-gray-400 font-semibold w-36 text-xl">{title}:</h1>
-      <h1 className="truncate text-xl font-bold">{description}</h1>
+    <div className="flex flex-col lg:flex-row items-start gap-5 py-4">
+      <h1 className="text-gray-400 font-semibold lg:w-36 text-xl">{title}:</h1>
+      <h1 className="truncate text-xl w-[345px] md:w-full font-bold">{description}</h1>
     </div>
   );
 };
@@ -52,7 +52,7 @@ const PreviousPage = () => {
   };
 
   return (
-    <div className="text-white px-16 pt-28">
+    <div className="text-white px-12 lg:px-16">
       <h1 className="text-3xl font-bold pb-8">Personal Room</h1>
       <div className="">
         <Table title="Topic" description={`${user?.username}'s meeting room`} />
