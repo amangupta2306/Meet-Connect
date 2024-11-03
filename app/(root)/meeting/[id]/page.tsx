@@ -9,11 +9,11 @@ import { StreamCall, StreamTheme } from "@stream-io/video-react-sdk";
 import { useState } from "react";
 
 const MeetingPage = ({ params: { id } }: { params: { id: string } }) => {
-  const { user, isLoaded } = useUser();
-  const [isSetupCompleted, setIsSetupCompleted] = useState();
+  const { isLoaded } = useUser();
+  const [isSetupCompleted, setIsSetupCompleted] = useState(false);
   const { call, isCallLoading } = useGetCallById(id);
 
-  if (!isLoaded || isCallLoading) return <Loader />;
+  if (!isLoaded || isCallLoading) return <Loader />
 
   return (
     <main className="h-screen w-full">
